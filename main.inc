@@ -49,7 +49,7 @@ while ($i <= 40) {
 
 <br /><br />
 
-Desired blood alcohol content (BAC):
+Blood alcohol content (BAC) limit:
 <select name="limit">
            <option value="SELECT" <?php if(!isset($_GET['limit'])) echo "selected=\"selected\""; ?>>Select</option>
 
