@@ -7,7 +7,7 @@
 
 <form method="post" action="redirect.php" style="background-color: lightgray; padding: 10px;">
 
-<h3>Physiological data</h3>
+<h3>Physiological data (required)</h3>
 
 <p>
 Body weight: <input type="text" name="bw_kg" value="<?php echo $_GET['bw_kg']; ?>" style="width:25px;" /> kg
@@ -91,7 +91,7 @@ echo "</option>\n"; $i++;
 
 <hr />
 
-<h3>Alcoholic beverage</h3>
+<h3>Alcoholic beverage (optional)</h3>
 This data will be represent in the "Custom" columns when you submit it.
 
 
@@ -101,8 +101,8 @@ Alcohol by volume (ABV): <input type="text" name="abv" value="<?php echo $abv; ?
 
 </select>
 
-Sparkling:
-<input type="radio" name="sparkling" value="Non-sparkling" <?php if ($sparkling=="Non-sparkling") echo " checked=\"checked\""; ?> /> Non-sparkling
+Still or sparkling beverage:<br />
+<input type="radio" name="sparkling" value="Still" <?php if ($sparkling=="Still") echo " checked=\"checked\""; ?> /> Still<br />
 <input type="radio" name="sparkling" value="Sparkling" <?php if ($sparkling=="Sparkling") echo " checked=\"checked\""; ?> /> Sparkling<br /><br />
 
 <hr />
