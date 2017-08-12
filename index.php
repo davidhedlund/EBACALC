@@ -115,7 +115,7 @@ if ($show_results == true) {
 
 <a href="About.html">About</a> this software.
 
-<p><hr />Copyright &copy; 2017 <a href="http://dbenglund.org/">David Hedlund</a>. This work is licensed under GNU GPL version 3 or later.</p>
+<p><hr />Copyright &copy; 2017 David Hedlund. This work is licensed under GNU GPL version 3 or later.</p>
 
     </td>
   </tr>
