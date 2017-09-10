@@ -18,14 +18,14 @@
 
 
 
-#if (isset($_GET['bw_kg'])) $bw_kg=$_GET['bw_kg']; else $bw_kg="70"; # Median weight for women. So if sex is switched from male to female, nothing has to be changed
-#if (isset($_GET['tbw_kg'])) $tbw_kg=$_GET['tbw_kg'];
-#if (isset($_GET['metabolism'])) $metabolism=$_GET['metabolism']; else $metabolism="0.012";
+if (isset($_GET['bw_kg'])) $bw_kg=$_GET['bw_kg'];
+if (isset($_GET['tbw_kg'])) $tbw_kg=$_GET['tbw_kg'];
+if (isset($_GET['metabolism'])) $metabolism=$_GET['metabolism'];
 
 
 
 
-if (isset($_GET['limit'])) $maximal_ebac=$_GET['limit']; else $maximal_ebac=0.099; # 0.10 margin from drunked means that a 1/4 glass of 12% wine can be consumed every 44 minutes for a 70 kilo male with normal metabolism (0.015).
+if (isset($_GET['limit'])) $maximal_ebac=$_GET['limit'];
 $alcohol_ml_not_dangerous=round (60/70*$bw_kg);
 $alcohol_ml_low_risk=round (160/70*$bw_kg);
 $alcohol_ml_intermediate_risk=300;

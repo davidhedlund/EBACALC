@@ -66,9 +66,9 @@ echo ">";
     echo "\n    <td>";
 
  
-echo "{$alcohol__list[$i]['alcohol_volume']}%, ";
+echo "{$alcohol__list[$i]['alcohol_volume']}%";
 
-echo "{$alcohol__list[$i]['name']}";
+echo " {$alcohol__list[$i]['name']}";
 
 echo "</td>";
 
@@ -107,11 +107,6 @@ echo " champagne glass";
 
 echo "</td>";
 
-
-echo "<td>";
-      if ("{$alcohol__list[$i]['repeat']}"=="y") echo "{$alcohol__list[$i]['drinking_minutes']}";
-      echo " m";
-echo "</td>";
 
 
 
@@ -165,11 +160,12 @@ echo "<td>";
 echo "%";
 
 
- echo "/{$h}:"; if ("{$m}"<=9) echo "0"; echo "{$m}";
+ echo " / {$h}:"; if ("{$m}"<=9) echo "0"; echo "{$m}";
 
 
+ if ($total__ebac_metabolized_in_minutes >= 60) {
 
- echo " (";
+ echo "<!-- ";
 
 
 
@@ -177,8 +173,9 @@ echo "%";
 
 echo round ($total__ebac_metabolized_in_minutes);
 
-echo " min)";
+echo " min-->";
 
+ }
 
 
 echo "</td>";
@@ -186,7 +183,14 @@ echo "</td>";
 echo "<td>";
 
 
-if ($total__ebac_metabolized_in_minutes >= 110 && $total__ebac_metabolized_in_minutes <= 130) echo "Yes";
+
+if ($total__ebac_metabolized_in_minutes >= 60 && $hour <= "1" && $hour !== "1") { echo "1 hour"; $hour="1"; }
+if ($total__ebac_metabolized_in_minutes >= 120 && $hour <= "2" && $hour !== "2") { echo "2 hours"; $hour="2"; }
+if ($total__ebac_metabolized_in_minutes >= 180 && $hour <= "3" && $hour !== "3") { echo "3 hours"; $hour="3"; }
+if ($total__ebac_metabolized_in_minutes >= 240 && $hour <= "4" && $hour !== "4") { echo "4 hours"; $hour="4"; }
+if ($total__ebac_metabolized_in_minutes >= 300 && $hour <= "5" && $hour !== "5") { echo "5 hours"; $hour="5"; }
+
+
 
 
 echo "</td>";

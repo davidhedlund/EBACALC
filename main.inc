@@ -84,6 +84,8 @@ echo "</option>\n"; $i++;
 }
 ?>
 </select>
+Please substract the desired limit with your ethanol metabolism rate if you consume the drink over the course of one hour.
+
 
 <?php if ($incomplete_form__limit == true) echo "<br /><span style=\"color:red\">This is required.</span>"; ?>
 
