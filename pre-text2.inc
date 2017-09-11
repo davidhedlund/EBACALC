@@ -184,11 +184,9 @@ echo "<td>";
 
 
 
-if ($total__ebac_metabolized_in_minutes >= 60 && $hour <= "1" && $hour !== "1") { echo "1 hour"; $hour="1"; }
-if ($total__ebac_metabolized_in_minutes >= 120 && $hour <= "2" && $hour !== "2") { echo "2 hours"; $hour="2"; }
-if ($total__ebac_metabolized_in_minutes >= 180 && $hour <= "3" && $hour !== "3") { echo "3 hours"; $hour="3"; }
-if ($total__ebac_metabolized_in_minutes >= 240 && $hour <= "4" && $hour !== "4") { echo "4 hours"; $hour="4"; }
-if ($total__ebac_metabolized_in_minutes >= 300 && $hour <= "5" && $hour !== "5") { echo "5 hours"; $hour="5"; }
+#if (round ($ebac+$previous__ebac, 3) == "1"); echo foo;
+
+if ($total__ebac_metabolized_in_minutes >= 60 && $hour <= "1" && $hour !== "1") { echo "Metabolized per approx. hour"; $hour="1"; }
 
 
 
