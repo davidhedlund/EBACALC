@@ -27,9 +27,12 @@ Estimated blood alcohol content:<br />
 &nbsp;&nbsp;&nbsp;&nbsp;EBAC per unit of alcohol (10 mL alcohol): $ebac_per_unit_of_alcohol%<br />
 &nbsp;&nbsp;&nbsp;&nbsp;EBAC per US standard drink (15 mL alcohol): $ebac_per_us_standard_drink%<br />
 
-<p>
-These calculations are based on \"normal fully stomach content\". People who do not eat before drinking can have a BAC three times higher than those who do.
-</p>
+
+<ul>
+  <li>Drinking guidelines (upper drinking limit per day and week for example) and the definition <em>standard drink</em> vary from country to country (see <a href=\"#Drinking_guidelines_example\">examples</a>). However, even within these limits, you can have problems if you drink too quickly, EBACALC is designed to help you avoid this pitfall!</li>
+  <li>These calculations are based on \"normal fully stomach content\". People who do not eat before drinking can have a BAC three times higher than those who do.</li>
+</ul>
+
 
 <p><h2>Alcohol equivalence based on submitted information:</h2></p>
 
@@ -3281,3 +3284,18 @@ array(
   ?>
 
 </table>
+
+
+<h1 id="Drinking_guidelines_example">Drinking guidelines example (US)</h1>
+
+<p>In the United States, a "standard" drink is any drink that contains about 0.6 fluid ounces or 14 grams of "pure" alcohol.</p>
+
+  <ul>
+<li>Moderate alcohol consumption: NIAAA says: According to the "Dietary Guidelines for Americans 2015-2020," U.S. Department of Health and Human Services and U.S. Department of Agriculture, moderate drinking is up to 1 drink [14 grams ethanol] per day for women and up to 2 drinks [(28 grams ethanol)] per day for men. - <a href="https://www.niaaa.nih.gov/alcohol-health/overview-alcohol-consumption/moderate-binge-drinking">Source</a></li>
+                                              <li>NIAAAs Definition of Drinking at Low Risk for Developing Alcohol Use Disorder (AUD): For women, low-risk drinking is defined as no more than 3 drinks [(42 grams ethanol)] on any single day and no more than 7 drinks [(98 grams ethanol)] per week. For men, it is defined as no more than 4 drinks [(56 grams ethanol)] on any single day and no more than 14 drinks [(196 grams ethanol)] per week. NIAAA research shows that only about 2 in 100 people who drink within these limits have AUD. - <a href="https://www.niaaa.nih.gov/alcohol-health/overview-alcohol-consumption/moderate-binge-drinking">Source</a></li>
+    <li>NIAAA defines binge drinking as a pattern of drinking that brings blood alcohol concentration (BAC) levels to 0.08 g/dL. This typically occurs after 4 drinks [(56 grams ethanol)] for women and 5 drinks [(70 grams ethanol)] for men—in about 2 hours. - <a href="a https://www.niaaa.nih.gov/alcohol-health/overview-alcohol-consumption/moderate-binge-drinking">Source</a></li>
+    <li>SAMHSA drinking guideline: The Substance Abuse and Mental Health Services Administration (SAMHSA), which conducts the annual National Survey on Drug Use and Health (NSDUH), defines binge drinking as 5 or more alcoholic drinks [(70 grams ethanol)] for males or 4 or more alcoholic drinks [(56 grams ethanol)] for females on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past month. - <a href="https://www.niaaa.nih.gov/alcohol-health/overview-alcohol-consumption/moderate-binge-drinking">Source</a></li>
+    <li>NIAAA drinking guideline for older people:  Adults over age 65 who are healthy and do not take medications should not have more than: 3 drinks [(42 grams ethanol)] on a given day, 7 drinks [(98 grams ethanol)] in a week. (NIAAA, Older Adults) - <a href="https://www.niaaa.nih.gov/alcohol-health/special-populations-co-occurring-disorders/older-adults">Source</a></li>
+  <ul>
+
+<p></p>

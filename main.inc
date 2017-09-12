@@ -1,7 +1,7 @@
 <h2>EBACALC &#151; Estimated Blood Alcohol Content Calculator</h2>
 
 <p>
-<em style="color:purple">A tool to reduce the risk of binge drinking</em>
+<em style="color:purple">A tool to reduce the risk of binge drinking.</em>
 </p>
 
 
